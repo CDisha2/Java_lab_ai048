@@ -9,7 +9,7 @@ public class ExamScoreTracker {
         int[] examScores = new int[NUM_STUDENTS];
 
 
-        // Input exam scores for each student
+        
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter exam scores for each student:");
         for (int i = 0; i < NUM_STUDENTS; i++) {
@@ -18,7 +18,6 @@ public class ExamScoreTracker {
         }
 
 
-        // Calculate sum of scores and highest score
         int sum = 0;
         int highestScore = examScores[0];
         for (int score : examScores) {
@@ -29,7 +28,6 @@ public class ExamScoreTracker {
         }
 
 
-        // Display statistics
         System.out.println("\nExam score statistics:");
         System.out.println("Sum of all scores: " + sum);
         System.out.println("Highest score attained: " + highestScore);
