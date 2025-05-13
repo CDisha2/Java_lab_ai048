@@ -1,7 +1,6 @@
 package D_BM23AI048;
 
 
-// ii. Fixed-Length Stack Implementation
 class FixedLengthStack implements Stack {
     private int[] stackArray;
     private int top;
@@ -47,7 +46,6 @@ class FixedLengthStack implements Stack {
 }
 
 
-// iii. Dynamic-Length Stack Implementation
 class DynamicLengthStack implements Stack {
     private int[] stackArray;
     private int top;
@@ -55,7 +53,7 @@ class DynamicLengthStack implements Stack {
 
 
     public DynamicLengthStack() {
-        this.capacity = 10; // Initial capacity
+        this.capacity = 10; 
         this.stackArray = new int[capacity];
         this.top = -1;
     }
@@ -64,7 +62,6 @@ class DynamicLengthStack implements Stack {
     @Override
     public void push(int element) {
         if (top == capacity - 1) {
-            // If the stack is full, double the capacity
             capacity *= 2;
             int[] newStackArray = new int[capacity];
             System.arraycopy(stackArray, 0, newStackArray, 0, stackArray.length);
