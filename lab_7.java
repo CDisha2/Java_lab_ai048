@@ -21,13 +21,11 @@ public class PharmacyManagementSystem {
     private ArrayList<Pharmacy> inventory = new ArrayList<>();
 
 
-    // Add new item to inventory
     public void addItem(Pharmacy item) {
         inventory.add(item);
     }
 
 
-    // Update existing item in inventory
     public void updateItem(int id, int quantity, double price) {
         for (Pharmacy item : inventory) {
             if (item.id == id) {
@@ -37,7 +35,6 @@ public class PharmacyManagementSystem {
             }
         }
     }
-    // Remove item from inventory
     public void removeItem(int id) {
         inventory.removeIf(item -> item.id == id);
     }
