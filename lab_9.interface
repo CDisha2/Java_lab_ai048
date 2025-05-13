@@ -1,0 +1,8 @@
+package D_BM23AI048;
+
+public interface Stack {
+    void push(int element);
+    int pop();
+    boolean isEmpty();
+    int size();
+}
