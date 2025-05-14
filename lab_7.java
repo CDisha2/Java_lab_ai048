@@ -7,6 +7,7 @@ class Pharmacy {
     public int quantity;
     public double price;
 
+    
 
     public Pharmacy(int id, String name, int quantity, double price) {
         this.id = id;
